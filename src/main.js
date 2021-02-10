@@ -10,7 +10,14 @@ import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 import solid from '@fortawesome/fontawesome-free-solid'
 import regular from '@fortawesome/fontawesome-free-regular'
 import brands from '@fortawesome/fontawesome-free-brands'
+import axios from 'axios'
+Vue.prototype.$axios = axios
 
+// color-ui start
+import "./components/colorui/main.css";
+import "./components/colorui/icon.css";
+import "./components/colorui/animation.css";
+// color-ui end
 
 import VueQuillEditor from 'vue-quill-editor'
 // require styles

@@ -11,6 +11,17 @@
 <script>
   export default {
     name: "home",
+    data(){
+      return{
+        scrollv: 0
+      }
+    },
+    methods:{
+      resetScrollv(){
+        let yOffset = document.documentElement.scrollTop;
+        this.scrollv = yOffset;
+      }
+    }
   }
 </script>
 
@@ -39,7 +50,7 @@
   }
 
   .home-background-img{
-    height: 100%;
+    height: 100vh;
     text-align:center;
   }
 
